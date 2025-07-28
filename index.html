@@ -10,52 +10,68 @@
     }
     body {
       margin: 0;
+      padding: 20px;
       background-color: white;
+      font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 40px;
-      font-family: Arial, sans-serif;
-    }
-    img {
-      width: 150px;
-      height: auto;
-      margin-bottom: 30px;
-    }
-    .contatti {
-      font-size: 20px;
-      color: #003366;
       text-align: center;
     }
+    img {
+      width: 40vw;
+      max-width: 200px;
+      min-width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .contatti {
+      font-size: 4vw;
+      max-font-size: 20px;
+      color: #003366;
+      margin-bottom: 15px;
+    }
     .social-icons {
-      margin-top: 15px;
       display: flex;
       gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
+      margin-bottom: 20px;
     }
     .social-icons a img {
-      width: 32px;
-      height: 32px;
+      width: 8vw;
+      max-width: 32px;
+      height: auto;
       transition: transform 0.2s ease;
     }
     .social-icons a:hover img {
       transform: scale(1.1);
     }
-    .website-label {
-      margin-top: 25px;
-      font-size: 18px;
-      color: #003366;
-      text-align: center;
+    .website-section {
+      margin-top: 10px;
     }
-    .website-link {
-      font-size: 16px;
-      margin-top: 5px;
+    .website-section .label {
+      font-size: 4vw;
+      color: #003366;
+    }
+    .website-section a {
+      font-size: 4vw;
       color: #0066cc;
       text-decoration: none;
+      display: block;
+      margin-top: 5px;
+      word-break: break-word;
     }
-    .website-link:hover {
+    .website-section a:hover {
       text-decoration: underline;
+    }
+
+    @media (min-width: 600px) {
+      .contatti,
+      .website-section .label,
+      .website-section a {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
@@ -73,7 +89,9 @@
       <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
     </a>
   </div>
-  <div class="website-label">Sito Web:</div>
-  <a class="website-link" href="https://www.3dproductionsrls.com" target="_blank">www.3dproductionsrls.com</a>
+  <div class="website-section">
+    <div class="label">Sito Web:</div>
+    <a href="https://www.3dproductionsrls.com" target="_blank">www.3dproductionsrls.com</a>
+  </div>
 </body>
 </html>
