@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Production SRLS</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       padding: 20px;
@@ -33,15 +31,15 @@
     }
     .social-icons {
       display: flex;
-      gap: 20px;
+      gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
     .social-icons a {
-      width: 10vw;
-      max-width: 40px;
-      min-width: 30px;
+      width: 6vw;
+      max-width: 24px;
+      min-width: 20px;
       display: flex;
       justify-content: center;
     }
@@ -71,12 +69,19 @@
     .website-section a:hover {
       text-decoration: underline;
     }
-
     @media (min-width: 600px) {
       .contatti,
       .website-section .label,
       .website-section a {
         font-size: 20px;
+      }
+      .social-icons {
+        gap: 20px;
+      }
+      .social-icons a {
+        width: 10vw;
+        max-width: 40px;
+        min-width: 30px;
       }
     }
   </style>
