@@ -38,25 +38,48 @@
       margin-bottom: 30px;
     }
 
-    .contatti {
+    .website-section {
+      margin-bottom: 30px;
       font-size: 6vw;
       max-font-size: 28px;
       color: #003366;
-      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .website-section a {
+      color: #0066cc;
+      text-decoration: none;
+      display: inline;
+      margin-top: 8px;
+      white-space: nowrap;
+      overflow-wrap: normal;
+      font-weight: normal;
+    }
+
+    .website-section a:hover {
+      text-decoration: underline;
+    }
+
+    .contatti {
+      font-size: 4vw;
+      max-font-size: 18px;
+      color: #003366;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
 
     .social-icons {
       display: flex;
-      gap: 8%;
+      gap: 6%;
       justify-content: center;
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .social-icons a {
-      width: 24%;
-      max-width: 60px;
-      min-width: 30px;
+      width: 18%;
+      max-width: 40px;
+      min-width: 20px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -72,26 +95,6 @@
       transform: scale(1.1);
     }
 
-    .website-section {
-      margin-top: 20px;
-      font-size: 6vw;
-      max-font-size: 28px;
-      color: #003366;
-    }
-
-    .website-section a {
-      color: #0066cc;
-      text-decoration: none;
-      display: inline;
-      margin-top: 8px;
-      white-space: nowrap;
-      overflow-wrap: normal;
-    }
-
-    .website-section a:hover {
-      text-decoration: underline;
-    }
-
     .footer-credit {
       position: absolute;
       bottom: 10px;
@@ -101,7 +104,9 @@
     }
 
     @media (min-width: 600px) {
-      .contatti,
+      .contatti {
+        font-size: 18px;
+      }
       .website-section {
         font-size: 28px;
       }
@@ -111,7 +116,14 @@
 <body>
   <div class="header-container">
     <img class="logo" src="fullhd.png" alt="Logo 3D Production SRLS">
+
+    <div class="website-section">
+      <div>Sito Web:</div>
+      <a href="https://www.3dproductionsrls.com" target="_blank">www.3dproductionsrls.com</a>
+    </div>
+
     <div class="contatti">Contatti</div>
+
     <div class="social-icons">
       <a href="https://wa.me/393922721967" target="_blank" title="WhatsApp">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
@@ -123,11 +135,8 @@
         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
       </a>
     </div>
-    <div class="website-section">
-      <div>Sito Web:</div>
-      <a href="https://www.3dproductionsrls.com" target="_blank">www.3dproductionsrls.com</a>
-    </div>
   </div>
+
   <div class="footer-credit">by Tulanti Repairs</div>
 </body>
 </html>
