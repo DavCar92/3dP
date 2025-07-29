@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Production SRLS</title>
   <style>
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin:0; padding:0; }
+
     body {
-      margin: 0;
       padding: 20px;
       background-color: white;
       font-family: Arial, sans-serif;
@@ -16,33 +16,46 @@
       align-items: center;
       text-align: center;
     }
-    img {
+
+    .header-container {
       width: 40vw;
       max-width: 200px;
       min-width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-container img.logo {
+      width: 100%;
       height: auto;
       margin-bottom: 20px;
     }
+
     .contatti {
       font-size: 4vw;
       max-font-size: 20px;
       color: #003366;
       margin-bottom: 15px;
     }
+
     .social-icons {
       display: flex;
-      gap: 12px;
+      gap: 5%;
       justify-content: center;
-      flex-wrap: wrap;
+      width: 100%;
       margin-bottom: 20px;
     }
+
     .social-icons a {
-      width: 6vw;
-      max-width: 24px;
+      width: 20%;      /* ogni icona prende il 20% della larghezza del contenitore */
+      max-width: 40px;
       min-width: 20px;
-      display: flex;
+      display: inline-flex;
       justify-content: center;
+      align-items: center;
     }
+
     .social-icons a img {
       width: 100%;
       height: auto;
@@ -51,58 +64,47 @@
     .social-icons a:hover img {
       transform: scale(1.1);
     }
+
     .website-section {
-      margin-top: 10px;
-    }
-    .website-section .label {
       font-size: 4vw;
+      max-font-size: 20px;
       color: #003366;
     }
     .website-section a {
-      font-size: 4vw;
       color: #0066cc;
       text-decoration: none;
       display: block;
       margin-top: 5px;
       word-break: break-word;
     }
-    .website-section a:hover {
-      text-decoration: underline;
-    }
+
     @media (min-width: 600px) {
       .contatti,
-      .website-section .label,
-      .website-section a {
+      .website-section {
         font-size: 20px;
-      }
-      .social-icons {
-        gap: 20px;
-      }
-      .social-icons a {
-        width: 10vw;
-        max-width: 40px;
-        min-width: 30px;
       }
     }
   </style>
 </head>
 <body>
-  <img src="fullhd.png" alt="Logo 3D Production SRLS">
-  <div class="contatti">Contatti</div>
-  <div class="social-icons">
-    <a href="https://wa.me/393922721967" target="_blank" title="WhatsApp">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </a>
-    <a href="https://www.instagram.com/3d_production_srls" target="_blank" title="Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=100094587672848&mibextid=wwXIfr" target="_blank" title="Facebook">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-    </a>
-  </div>
-  <div class="website-section">
-    <div class="label">Sito Web:</div>
-    <a href="https://www.3dproductionsrls.com" target="_blank">www.3dproductionsrls.com</a>
+  <div class="header-container">
+    <img class="logo" src="fullhd.png" alt="Logo 3D Production SRLS">
+    <div class="contatti">Contatti</div>
+    <div class="social-icons">
+      <a href="https://wa.me/393922721967" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/3d_production_srls" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100094587672848&mibextid=wwXIfr" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+    </div>
+    <div class="website-section">
+      <div>Sito Web:</div>
+      <a href="https://www.3dproductionsrls.com" target="_blank">www.3dproductionsrls.com</a>
+    </div>
   </div>
 </body>
 </html>
