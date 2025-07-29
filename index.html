@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Production SRLS</title>
   <style>
-    * { box-sizing: border-box; margin:0; padding:0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       padding: 20px;
@@ -48,7 +48,7 @@
     }
 
     .social-icons a {
-      width: 20%;      /* ogni icona prende il 20% della larghezza del contenitore */
+      width: 20%;
       max-width: 40px;
       min-width: 20px;
       display: inline-flex;
@@ -61,21 +61,29 @@
       height: auto;
       transition: transform 0.2s ease;
     }
+
     .social-icons a:hover img {
       transform: scale(1.1);
     }
 
     .website-section {
+      margin-top: 10px;
       font-size: 4vw;
       max-font-size: 20px;
       color: #003366;
     }
+
     .website-section a {
       color: #0066cc;
       text-decoration: none;
-      display: block;
+      display: inline;
       margin-top: 5px;
-      word-break: break-word;
+      white-space: nowrap;
+      overflow-wrap: normal;
+    }
+
+    .website-section a:hover {
+      text-decoration: underline;
     }
 
     @media (min-width: 600px) {
